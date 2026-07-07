@@ -2,7 +2,7 @@ FROM tomcat:9.0-jdk17
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY dist/animalPro.war /usr/local/tomcat/webapps/ROOT.war
+COPY build/web/ /usr/local/tomcat/webapps/ROOT/
 
 EXPOSE 8080
 
